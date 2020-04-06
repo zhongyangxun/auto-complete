@@ -1,0 +1,55 @@
+{
+  "name": "@zhongyangxun/auto-complete",
+  "version": "1.0.1",
+  "main": "lib/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run rollup -c -w",
+    "eslint": "eslint src __tests__/index.js",
+    "format": "prettier --write src/*.js __tests__/index.js",
+    "test": "jest --coverage",
+    "build": "yarn run rollup -c"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn eslint&&yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "description": "A react auto complete component.",
+  "keywords": [
+    "react",
+    "auto-complete",
+    "react library",
+    "input"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "babel-eslint": "^10.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "prettier": "^2.0.3",
+    "react-test-renderer": "^16.13.1",
+    "rollup": "^2.3.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  }
+}
