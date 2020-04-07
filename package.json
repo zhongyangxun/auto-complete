@@ -1,5 +1,5 @@
 {
-  "name": "@zhongyangxun/auto-complete",
+  "name": "@zhongyangxun/z-auto-complete",
   "version": "1.0.1",
   "main": "lib/bundle.js",
   "license": "MIT",
@@ -8,7 +8,8 @@
     "eslint": "eslint src __tests__/index.js",
     "format": "prettier --write src/*.js __tests__/index.js",
     "test": "jest --coverage",
-    "build": "yarn run rollup -c"
+    "build": "yarn run rollup -c",
+    "pub": "yarn publish --access public"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render and initial data test renders correctly 1`] = `
+<div
+  className="auto-complete"
+>
+  <input
+    className="sc-AxiKw gUdEJL"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onInput={[Function]}
+    type="text"
+    value="aa"
+  />
+</div>
+`;
